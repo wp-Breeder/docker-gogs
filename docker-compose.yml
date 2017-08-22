@@ -1,0 +1,26 @@
+nginx:
+    image: nginx:alpine
+    volumes:
+        - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+        - "80:80"
+    restart: always
+mysql:
+    image: mysql:5.7
+    volumes:
+      - ./mysql/my.cnf:/etc/mysql/conf.d/config-file.cnf:ro
+      - /path/to/gogs/mysql:/var/lib/mysql
+    restart: always
+    command: ['mysqld', '--character-set-server=utf8']
+    environment:
+        MYSQL_ROOT_PASSWORD: your-mysql-root-password
+gogs:
+    image: gogs/gogs
+    volumes:
+      - /path/to/gogs:/data:rw
+    links:
+      - mysql
+    ports:
+      - "3000:3000"
+      - "3022:3022"
+    restart: always
