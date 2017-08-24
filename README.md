@@ -2,11 +2,11 @@
 docker部署gogs
 
 ### 用法
-###1. 卸载老版本docker，如果`apt-get` 提醒没有这些安装包就卸载成功。
+### 1. 卸载老版本docker，如果`apt-get` 提醒没有这些安装包就卸载成功。
 ```shell
 sudo apt-get remove docker docker-engine docker.io
 ```
-###2. Ubuntu14.04, 安装docker 
+### 2. Ubuntu14.04, 安装docker 
 ```shell
 #更新源
 sudo apt-get update
@@ -38,12 +38,12 @@ apt-cache madison docker-ce
 ##安装指定版本docker
 sudo apt-get install docker-ce=<VERSION>
 ```
-###3. 安装docker-compose
+### 3. 安装docker-compose
 ```shell
 curl -L https://github.com/docker/compose/releases/download/{指定版本}/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
 ```
-###4. 安装gogs
+### 4. 安装gogs
  a. 克隆项目
 ```shell
     git clone https://github.com/wp-Breeder/docker-gogs.git
