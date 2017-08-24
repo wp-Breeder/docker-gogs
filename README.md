@@ -58,7 +58,7 @@ chmod +x /usr/local/bin/docker-compose
 ### 修改nginx 配置
    #打开 nginx.conf ,把http://{host}:3000，设置成真实的ip地址和端口
 ```
- c.运行
+ c. 运行
 ```shell
     #在docker-compose.yml文件目录里运行：
     docker-compose up -d
