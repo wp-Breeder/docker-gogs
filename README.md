@@ -43,6 +43,7 @@ sudo apt-get install docker-ce=<VERSION>
 curl -L https://github.com/docker/compose/releases/download/{指定版本}/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
 ```
+docker-compose [版本列表](https://github.com/docker/compose/releases)
 ### 4. 安装gogs
  a. 克隆项目
 ```shell
