@@ -59,12 +59,17 @@ chmod +x /usr/local/bin/docker-compose
    #打开 nginx.conf ,把http://{host}:3000，设置成真实的ip地址和端口
 ```
  c. 运行
+    在docker-compose.yml文件目录里运行：
 ```shell
-    #在docker-compose.yml文件目录里运行：
     docker-compose up -d
 ```
 
+### 5. 备份gogs
+    备份/path/to/gogs 目录
 
+### 6. 移动gogs
+    1. 复制/path/to/gogs
+    2. 重新部署docker-gogs
 
 
 
