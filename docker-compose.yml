@@ -8,7 +8,7 @@ nginx:
 mysql:
     image: mysql:5.7
     volumes:
-      - ./mysql/my.cnf:/etc/mysql/conf.d/config-file.cnf:ro
+     #- ./mysql/my.cnf:/etc/mysql/conf.d/config-file.cnf:ro
       - /path/to/gogs/mysql:/var/lib/mysql
     restart: always
     command: ['mysqld', '--character-set-server=utf8']
