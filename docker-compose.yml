@@ -14,7 +14,7 @@ mysql:
     command: ['mysqld', '--character-set-server=utf8']
     environment:
         MYSQL_ROOT_PASSWORD: your-mysql-root-password
-        MYSQL_DATABASE: default-gogs-data-base
+        MYSQL_DATABASE: default-gogs-database
 gogs:
     image: gogs/gogs
     volumes:
